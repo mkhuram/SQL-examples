@@ -1,0 +1,9 @@
+drop table INSTRUCTOR;
+create table INSTRUCTOR (ins_id int not null, lastname varchar(10), firstname varchar(10), city varchar(10), Country char(2));
+insert into INSTRUCTOR (ins_id, lastname, firstname, city, Country) values (1, 'Iqbal', 'Khurram', 'Kettering', 'UK');
+insert into INSTRUCTOR (ins_id, lastname, firstname, city, Country) values (2, 'Khurram', 'Fareeha', 'Kettering', 'UK'), (3, 'Huma', 'Zile', 'Kettering', 'UK');
+select * from INSTRUCTOR;
+select firstname, lastname, country from INSTRUCTOR where CITY = 'Kettering';
+UPDATE INSTRUCTOR SET city = 'London' WHERE firstname = 'Fareeha';
+DELETE FROM INSTRUCTOR WHERE firstname='Fareeha';
+select * from INSTRUCTOR;
